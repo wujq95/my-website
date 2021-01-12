@@ -1,0 +1,13 @@
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
+<script>
+var url = purl();
+if (url.attr('host') == 'https://wujq95.github.io/projects') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('https://wujq95.github.io/projects', "https://wujq95.github.io");
+    window.location.replace(new_url); 
+}else {
+    window.location.href="https://wujq95.github.io";
+}
+    
+</script>
