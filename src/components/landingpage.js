@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import imgURL from './../images/avatar.JPG';
 
-
-
 class Landing extends Component {
     render() {
         return(
@@ -26,24 +24,20 @@ class Landing extends Component {
                             <div className="social-links">
 
                                 {/* LinkedIn */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/jiaqi-wu-ca" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square" aria-hidden="true" />
                                 </a>
 
                                 {/* Github */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://github.com/wujq95" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
 
-                                {/* Freecodecamp */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-free-code-camp" aria-hidden="true" />
+                                {/* Email */}
+                                <a href="mailto:wujq1214@gmail.com" rel="noopener noreferrer" target="_blank">
+                                    <i className="fa fa-envelope-square" aria-hidden="true" />
                                 </a>
 
-                                {/* Youtube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube-square" aria-hidden="true" />
-                                </a>
 
                             </div>
                         </div>
