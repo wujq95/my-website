@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell} from 'react-mdl';
 import CardComponent from "./card";
 
 class Projects extends Component {
@@ -15,25 +15,25 @@ class Projects extends Component {
                 <div>
                     <div className="projects-grid">
                         <CardComponent
+                            name="Management App"
+                            description = "A full-stack management Web app developed by Spring, Spring Boot, Spring MVC, and Spring Data JPA, Spring Security, React, and Redux"
+                            background={{width: '200px', height: '180px', background: 'url(spring_logo.png) center / cover', margin: 'auto'}}
+                            github="https://github.com/wujq95/FullStackManagement"
+                            demo="http://managementspringbootreact-env.eba-danhgqth.us-east-2.elasticbeanstalk.com/"
+                        />
+                        <CardComponent
+                            name="Student App"
+                            description = "A full stack Web Application developed by Spring Boot and React"
+                            background={{width: '200px', height: '200px', background: 'url(spring_logo.png) center / cover', margin: 'auto'}}
+                            github="https://github.com/wujq95/student-backend-springboot"
+                            demo="http://springbootandreact01-env.eba-3spphnqc.us-east-2.elasticbeanstalk.com/"
+                        />
+                       {/* <CardComponent
                             name="Recipe App"
-                            description = "A recipe app developed by Spring, Spring Boot, Spring MVC, and Spring Data JPA"
+                            description = "A recipe app developed by Spring, Spring Boot, Spring MVC, Spring Data JPA, and Thymeleaf"
                             background={{width: '200px', height: '220px', background: 'url(spring_logo.png) center / cover', margin: 'auto'}}
                             github="https://github.com/wujq95/recipe-app"
                             demo="https://wujq-recipe-app.herokuapp.com"
-                        />
-                        {/*<CardComponent
-                            name="Pics"
-                            description = "React images search project(Call Unsplash API)"
-                            background={{width: '200px', height: '200px', background: 'url(react_logo.png) center / cover', margin: 'auto'}}
-                            github="https://github.com/wujq95/pics"
-                            demo="https://pics-smoky.vercel.app"
-                        />
-                        <CardComponent
-                            name="Widgets"
-                            description = "React widgets practice(Call Wikipedia and Google Translate APIs))"
-                            background={{width: '200px', height: '200px', background: 'url(react_logo.png) center / cover', margin: 'auto'}}
-                            github="https://github.com/wujq95/widgets"
-                            demo="https://widgets-kappa-six.vercel.app"
                         />*/}
                     </div>
                 </div>
@@ -120,7 +120,7 @@ class Projects extends Component {
         return(
             <div>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>Spring</Tab>
+                    <Tab>Full Stack</Tab>
                     <Tab>React</Tab>
                     <Tab>Others</Tab>
                 </Tabs>
